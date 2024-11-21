@@ -14,8 +14,10 @@ namespace MovieStore
 
             // Add services to the container.
             builder.Services
-                .RegisterDataLayer()
-                .RegisterBusinessLayer();
+                .RegisterRepostitories()
+                .RegisterServices();
+
+
 
 
             builder.Services.AddControllers();
