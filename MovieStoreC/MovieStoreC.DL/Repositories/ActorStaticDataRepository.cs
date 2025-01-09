@@ -11,7 +11,7 @@ namespace MovieStoreC.DL.Repositories
             return StaticDb.Actors;
         }
 
-        public Actor? GetById(int id)
+        public Actor? GetById(string id)
         {
             if (id <= 0) return null;
 
