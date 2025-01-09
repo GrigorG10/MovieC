@@ -13,6 +13,7 @@ namespace MovieStoreC
     {
         public static void Main(string[] args)
         {
+            
             var builder = WebApplication.CreateBuilder(args);
 
             //Add configurations
