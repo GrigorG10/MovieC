@@ -13,5 +13,9 @@
   <ItemGroup>
     <ProjectReference Include="..\MovieStoreC.DL\MovieStoreC.DL.csproj" />
   </ItemGroup>
-<InternalsVisibleTo Include="MovieStoreC.Tests" />
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MovieStoreC.Tests" />
+	</ItemGroup>
+
 </Project>

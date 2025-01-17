@@ -13,7 +13,6 @@ namespace MovieStoreC
     {
         public static void Main(string[] args)
         {
-            
             var builder = WebApplication.CreateBuilder(args);
 
             //Add configurations
@@ -36,7 +35,11 @@ namespace MovieStoreC
 
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddHealthChecks();
+
             var app = builder.Build();
+
+            app.MapHealthChecks("/healthz");
 
             if (app.Environment.IsDevelopment())
             {
