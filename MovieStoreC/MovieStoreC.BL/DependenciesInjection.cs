@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using MovieStoreC.BL.Interfaces;
 using MovieStoreC.BL.Services;
-
+//napishi;
 namespace MovieStoreC.BL
 {
     public static class DependenciesInjection
@@ -11,7 +11,7 @@ namespace MovieStoreC.BL
         {
             return services
                         .AddSingleton<IMoviesService, MoviesService>()
-                        .AddSingleton<IBusinessService, BusinessService>();
+                        .AddSingleton<IBusinessService, BusinessService>(); 
         }
     }
 }
